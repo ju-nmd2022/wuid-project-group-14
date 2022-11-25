@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #b01001;
+  padding: 20px;
+  height: 80px;
+}
+
+.logotype {
+  width: fit-content;
+  height: 45px;
+}
+
+.menu-field {
+  text-align: right;
+}
+
+.menu-alternative {
+  margin: 5px;
+  color: #ffffff;
+}
+
+input {
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 10rem;
+}
+
+::placeholder {
+  font-size: 12pt;
+  color: #b01001;
+}
