@@ -1,0 +1,93 @@
+.container {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.london {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.london-picture {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.london-slogan {
+  width: fit-content;
+  font-size: 55pt;
+  font-weight: bold;
+  color: #b01001;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.london-slogan {
+  animation-name: textanimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes textanimation {
+  0% {
+    color: #b01001;
+  }
+  50% {
+    color: #29296e;
+  }
+}
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.phonobooth-place {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.phonebooth {
+  object-fit: contain;
+  width: 100%;
+}
+
+.text1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.train-place {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.train {
+  object-fit: contain;
+  width: 100%;
+}
+
+.text2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
