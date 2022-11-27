@@ -8,6 +8,7 @@ header {
   background-color: #b01001;
   padding: 20px;
   height: 80px;
+  align-items: center;
 }
 
 .logotype {
