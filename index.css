@@ -1,13 +1,5 @@
-.container {
-  font-family: Arial, sans-serif;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-}
-
 .london {
-  grid-column-start: 1;
-  grid-column-end: 5;
+  width: 100%;
 }
 
 .london-picture {
@@ -23,7 +15,7 @@
   color: #b01001;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
-  padding: 25px;
+  padding: 35px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,8 +46,8 @@
   grid-column-end: 5;
   margin-right: 100px;
   margin-left: 100px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -70,6 +62,7 @@
 .phonebooth {
   object-fit: contain;
   width: 100%;
+  border-radius: 20px;
 }
 
 .text1 {
@@ -85,9 +78,77 @@
 .train {
   object-fit: contain;
   width: 100%;
+  border-radius: 20px;
 }
 
 .text2 {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+.headline {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.image {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.image-text {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 10px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.figure:hover {
+}
+
+.figure1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 6px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
 }

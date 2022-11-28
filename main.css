@@ -28,6 +28,7 @@ header {
 .menu-alternative:hover {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 3px;
+  border-radius: 5px;
 }
 
 input {
@@ -59,4 +60,5 @@ footer {
 .info-text:hover {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 2px;
+  border-radius: 5px;
 }

@@ -1,0 +1,95 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.image {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.image-text {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 10px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.figure:hover {
+}
+
+.figure1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 6px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure8 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
