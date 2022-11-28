@@ -23,6 +23,7 @@ header {
 .menu-alternative {
   margin: 5px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .menu-alternative:hover {

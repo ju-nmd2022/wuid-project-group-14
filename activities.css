@@ -28,6 +28,8 @@
 }
 
 .figure:hover {
+  text-decoration: underline;
+  border-color: #29296e;
 }
 
 .figure1 {
