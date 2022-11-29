@@ -21,7 +21,7 @@ header {
 }
 
 .menu-alternative {
-  margin: 5px;
+  margin: 10px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -34,7 +34,7 @@ header {
 
 input {
   padding: 3px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 5px;
   width: 10rem;
 }
