@@ -1,0 +1,50 @@
+.button {
+  border-radius: 5px;
+  padding: 5px;
+  border-color: transparent;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.image {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  height: fit-content;
+  border-radius: 30px;
+}
+
+.text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 50px;
+}
+
+.buy {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  max-width: 350px;
+  border: 5px solid;
+  border-radius: 10px;
+  border-color: #b01001;
+  background-color: #b01001;
+}
+
+.buy-text {
+  font-size: 20pt;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.buy-text:hover {
+  text-decoration: underline;
+}

@@ -9,6 +9,18 @@
   margin-right: 100px;
 }
 
+.headline {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+}
+
+.dropdown {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+}
+
 .image {
   width: 100%;
   height: fit-content;
