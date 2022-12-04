@@ -18,8 +18,121 @@
 .dropdown {
   grid-column-start: 1;
   grid-column-end: 5;
-  text-align: right;
+  background: #b01001;
+  text-align: center;
 }
+
+.dropdown ul {
+  list-style: none;
+  background-color: #b01001;
+  width: 1200px;
+  height: 30px;
+
+}
+
+.dropdown ul li {
+
+  display: inline-block;
+  height: 20px;
+  width: 150px;
+  background-color: white;
+  padding: 5px 0px;
+  margin: 0px 70px;
+ 
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.active, .dropdown ul li:hover {
+
+  background-color: #2bab0d;
+  border-radius: 5px;
+}
+
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul {
+  list-style: none;
+  background-color: #b01001;
+  opacity: 0.9;
+  width: 100px;
+  height: 145px;
+  
+}
+
+.sub-menu ul li a {
+  color: white;
+}
+
+.dropdown ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: left;
+
+ 
+}
+
+.dropdown ul li:hover .sub-menu ul {
+display: block;
+margin-top: 12px;
+}
+
+.dropdown ul li:hover .sub-menu ul li {
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  margin-left: -10px;
+}
+
+
+.sub-menu-1 {
+  display: none;
+}
+
+.sub-menu-1 ul {
+  list-style: none;
+  background-color: #b01001;
+  opacity: 0.9;
+  width: 100px;
+  height: 360px;
+  
+}
+
+.sub-menu-1 ul li a {
+  color: white;
+}
+
+.dropdown ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: left;
+
+ 
+}
+
+.dropdown ul li:hover .sub-menu-1 ul {
+display: block;
+margin-top: 12px;
+}
+
+.dropdown ul li:hover .sub-menu-1 ul li {
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  margin-left: -10px;
+}
+
+
 
 .image {
   width: 100%;
