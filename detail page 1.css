@@ -2,6 +2,7 @@
   border-radius: 5px;
   padding: 5px;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -23,10 +24,22 @@
   border-radius: 30px;
 }
 
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 30pt;
+  justify-self: start;
+  align-self: start;
+}
+
 .text {
   grid-column-start: 1;
   grid-column-end: 3;
   padding-left: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  justify-self: start;
+  align-self: start;
+  line-height: 2rem;
 }
 
 .buy {
