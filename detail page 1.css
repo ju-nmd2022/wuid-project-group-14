@@ -3,6 +3,9 @@
   padding: 5px;
   border-color: transparent;
   cursor: pointer;
+  background-color: #b01001;
+  color: #ffffff;
+  font-size: 14pt;
 }
 
 .container {
