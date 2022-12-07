@@ -1,3 +1,19 @@
+.logotype {
+  position: absolute;
+  top: 5%;
+  /*left: 3%; */
+}
+
+.menu-field {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+
+.menu-alternative {
+  font-size: 14pt;
+}
+
 .london {
   width: 100%;
 }
@@ -257,8 +273,8 @@
 }
 
 .bus {
-  height: 20rem;
-  width: 20rem;
+  max-height: 20rem;
+  max-width: 20rem;
   margin-bottom: -4rem;
   margin-top: -15rem;
   position: relative;
