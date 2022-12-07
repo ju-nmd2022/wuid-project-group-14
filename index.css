@@ -255,3 +255,25 @@
     grid-column-end: 3;
   }
 }
+
+.bus {
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: -4rem;
+  margin-top: -15rem;
+  position: relative;
+  animation-name: bus;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bus {
+  0% {
+      transform:translateX(-100%);
+  }
+  100% {
+      transform:translateX(500%);
+  }
+}
+
