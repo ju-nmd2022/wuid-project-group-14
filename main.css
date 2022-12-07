@@ -24,11 +24,11 @@ header {
   margin: 10px;
   color: #ffffff;
   text-decoration: none;
+  padding: 5px;
 }
 
 .menu-alternative:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 3px;
   border-radius: 5px;
 }
 
@@ -64,9 +64,26 @@ footer {
   border-radius: 5px;
 }
 
-@mediascreen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.logotype {
+  position: absolute;
+  top: 5%;
+  /*left: 3%; */
+}
+
+.menu-field {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+
+.menu-alternative {
+  font-size: 14pt;
+}
+
