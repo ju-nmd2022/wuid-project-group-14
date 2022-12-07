@@ -42,6 +42,41 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .london-slogan {
+    font-size: 45pt;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .london-slogan {
+    font-size: 35pt;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .london-slogan {
+    font-size: 25pt;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .london-slogan {
+    font-size: 20pt;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .london-slogan {
+    font-size: 15pt;
+    padding: 10px;
+  }
+}
+
 .content {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -70,7 +105,7 @@
   grid-column-start: 2;
   grid-column-end: 3;
   font-family: Arial, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   justify-self: start;
   align-self: start;
   line-height: 2rem;
@@ -91,10 +126,38 @@
   grid-column-start: 2;
   grid-column-end: 3;
   font-family: Arial, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   justify-self: start;
   align-self: start;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .text1 {
+    font-size: 12pt;
+  }
+  .text2 {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .phonobooth-place {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .text1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .train-place {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .text2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .container {
@@ -164,4 +227,31 @@
   border: 5px solid;
   border-radius: 15px;
   border-color: #b01001;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .headline {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .figure1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .figure2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .figure3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .figure4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }

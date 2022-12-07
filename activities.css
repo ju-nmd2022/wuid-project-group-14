@@ -28,18 +28,15 @@
   background-color: #b01001;
   width: 1200px;
   height: 30px;
-
 }
 
 .dropdown ul li {
-
   display: inline-block;
   height: 20px;
   width: 150px;
   background-color: white;
   padding: 5px 0px;
   margin: 0px 70px;
- 
 }
 
 .dropdown ul li a {
@@ -47,12 +44,11 @@
   color: #000000;
 }
 
-.active, .dropdown ul li:hover {
-
+.active,
+.dropdown ul li:hover {
   background-color: #ffffff;
   border-radius: 5px;
 }
-
 
 .sub-menu {
   display: none;
@@ -64,7 +60,6 @@
   opacity: 0.9;
   width: 100px;
   height: 145px;
-  
 }
 
 .sub-menu ul li a {
@@ -77,13 +72,11 @@
   margin-top: 10px;
   margin-left: 5px;
   text-align: left;
-
- 
 }
 
 .dropdown ul li:hover .sub-menu ul {
-display: block;
-margin-top: 12px;
+  display: block;
+  margin-top: 12px;
 }
 
 .dropdown ul li:hover .sub-menu ul li {
@@ -92,7 +85,6 @@ margin-top: 12px;
   text-align: left;
   margin-left: -10px;
 }
-
 
 .sub-menu-1 {
   display: none;
@@ -104,7 +96,6 @@ margin-top: 12px;
   opacity: 0.9;
   width: 100px;
   height: 360px;
-  
 }
 
 .sub-menu-1 ul li a {
@@ -117,13 +108,11 @@ margin-top: 12px;
   margin-top: 10px;
   margin-left: 5px;
   text-align: left;
-
- 
 }
 
 .dropdown ul li:hover .sub-menu-1 ul {
-display: block;
-margin-top: 12px;
+  display: block;
+  margin-top: 12px;
 }
 
 .dropdown ul li:hover .sub-menu-1 ul li {
@@ -132,8 +121,6 @@ margin-top: 12px;
   text-align: left;
   margin-left: -10px;
 }
-
-
 
 .image {
   width: 100%;

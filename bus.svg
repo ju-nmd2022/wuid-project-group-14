@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.88 242">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b01001;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #f6f9b7;
+      }
+
+      .cls-6 {
+        font-family: Arial-Black, Arial;
+        font-size: 6px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #e0f9fc;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M27,162l1-81s-1-14,17-14,126-1,126-1c0,0,22-1,23,17,1.17,21.06,1,42,1,42,0,0-1,5,5,5s8,8,8,10v23l-181-1Z"/>
+  <rect x="26" y="161" width="183" height="4"/>
+  <circle cx="168.5" cy="160.5" r="16.5"/>
+  <circle cx="69.5" cy="161.5" r="16.5"/>
+  <rect class="cls-4" x="64" y="74" width="25" height="20"/>
+  <rect class="cls-4" x="92.5" y="73.5" width="19" height="20"/>
+  <rect class="cls-4" x="115.5" y="73.5" width="20" height="20"/>
+  <rect class="cls-4" x="139.5" y="73.5" width="21" height="20"/>
+  <path class="cls-4" d="M171.18,73.5h10.35c3.29,0,5.97,2.67,5.97,5.97v14.03h-22v-14.32c0-3.14,2.55-5.68,5.68-5.68Z"/>
+  <path class="cls-4" d="M38.04,73.5h14.56c3.25,0,5.89,2.64,5.89,5.89v14.11h-26v-14.46c0-3.06,2.48-5.54,5.54-5.54Z"/>
+  <rect class="cls-4" x="174.5" y="109.5" width="20" height="18"/>
+  <rect class="cls-2" x="26.5" y="105.5" width="169" height="5"/>
+  <rect class="cls-4" x="117.5" y="116.5" width="19" height="18"/>
+  <rect class="cls-4" x="91.5" y="116.5" width="22" height="18"/>
+  <rect class="cls-4" x="62.5" y="116.5" width="25" height="18"/>
+  <path class="cls-4" d="M34.22,116.5h19.55c2.06,0,3.72,1.67,3.72,3.72v14.28H30.5v-14.28c0-2.06,1.67-3.72,3.72-3.72Z"/>
+  <path class="cls-4" d="M145.34,116.5h13.06c2.26,0,4.1,1.84,4.1,4.1v13.9h-21v-14.16c0-2.12,1.72-3.84,3.84-3.84Z"/>
+  <line class="cls-3" x1="56" y1="99.5" x2="80" y2="99.5"/>
+  <line class="cls-3" x1="123" y1="99.5" x2="147" y2="99.5"/>
+  <text class="cls-6" transform="translate(90.21 101.98)"><tspan class="cls-5" x="0" y="0">L</tspan><tspan x="3.9" y="0">ONDON</tspan></text>
+</svg>
