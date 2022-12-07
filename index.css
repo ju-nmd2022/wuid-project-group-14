@@ -33,48 +33,16 @@
   animation-direction: normal;
 }
 
-@keyframes textanimation {
-  0% {
-    color: #b01001;
-  }
-  50% {
-    color: #29296e;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .london-slogan {
-    font-size: 45pt;
-    padding: 25px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .london-slogan {
-    font-size: 35pt;
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .london-slogan {
-    font-size: 25pt;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .london-slogan {
-    font-size: 20pt;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .london-slogan {
-    font-size: 15pt;
-    padding: 10px;
-  }
+.bus {
+  max-height: 20rem;
+  max-width: 20rem;
+  margin-bottom: -4rem;
+  margin-top: -15rem;
+  position: relative;
+  animation-name: bus;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .content {
@@ -132,48 +100,206 @@
   line-height: 2rem;
 }
 
-@media screen and (max-width: 1300px) {
-  .text1 {
-    font-size: 12pt;
+.headline {
+  font-size: 50px;
+ text-align: center;
+ padding: 40px;
+}
+
+.figure-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 6px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.figure-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure-4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: #b01001;
+}
+
+.figure:hover {
+  text-decoration: underline;
+  border-color: #29296e;
+}
+
+/* key frames */
+
+@keyframes bus {
+  0% {
+      transform:translateX(-100%);
   }
-  .text2 {
-    font-size: 12pt;
+  100% {
+      transform:translateX(400%);
+  }
+}
+@keyframes textanimation {
+  0% {
+    color: #b01001;
+  }
+  50% {
+    color: #29296e;
   }
 }
 
-@media screen and (max-width: 1100px) {
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+  }
+
+  .logotype {
+    height: 40px;
+    width: 200px;
+    margin-left: -30px;
+    margin-top: -20px;
+  }
+
+.menu-field {
+  display: inline block;
+}
+
+.menu-alternative {
+  font-size: 12px;
+
+}
+
+  .search-field {
+  height: 20px;
+  width: 120px;
+}
+
+.london-slogan {
+  font-size: 15pt;
+  padding: 10px;
+  top: 240px;
+}
+
+  .bus {
+    height: 150px;
+    width: 200px;
+    top: -42px;
+  }
+
   .phonobooth-place {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .text1 {
+ 
+   .phonebooth {
+    width: 400px;
+    margin-left: -30px;
+    margin-top: -25px;
+   }
+
+   .text1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font: 12px;
+    margin-left: -45px;
+    text-align: justify;
+   }
+
+   .train-place {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .train-place {
+
+   .train {
+    width: 400px;
+    margin-left: -30px;
+    margin-top: -5px;
+   }
+
+   .text2 {
     grid-column-start: 1;
     grid-column-end: 3;
+    font: 12px;
+    margin-left: -45px;
+    text-align: justify;
   }
-  .text2 {
+
+  .headline {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
+    font-size: 30px;
   }
-}
+  
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-bottom: 60px;
-}
+  .container h1 {
+    
+    margin-top: -30px;
+    margin-left: -120px;
+  }
 
-.headline {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
+  .figure-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 400px;
+    margin-left: -25px;
+  }
+  .figure-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 400px;
+    margin-left: -25px;
+    margin-top: 50px;
+  }
+  .figure-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 400px;
+    margin-left: -25px;
+    margin-top: 50px;
+  }
+  .figure-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 400px;
+    margin-left: -25px;
+    margin-top: 50px;
+  }
+  .figure:hover {
+    text-decoration: underline;
+    border-color: #29296e;
+  }
 
+  a {
+    text-decoration: none;
+  }
+ 
 .image {
   width: 100%;
   height: fit-content;
@@ -184,96 +310,30 @@
   color: #000000;
   text-align: center;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14pt;
   padding: 10px;
 }
 
-.a {
-  text-decoration: none;
-}
+.info {
 
-.figure:hover {
-  text-decoration: underline;
-  border-color: #29296e;
-}
-
-.figure1 {
-  grid-column-start: 1;
+  grid-column-start:1 ;
   grid-column-end: 2;
-  border: 6px solid;
-  border-radius: 15px;
-  border-color: #b01001;
+  height: 200px;
+  width: 200px;
 }
 
-.figure2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  border: 5px solid;
-  border-radius: 15px;
-  border-color: #b01001;
+info-3 {
+  display: none;
 }
 
-.figure3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  border: 5px solid;
-  border-radius: 15px;
-  border-color: #b01001;
+.info-text-3 {
+  display: none;
+  
 }
 
-.figure4 {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  border: 5px solid;
-  border-radius: 15px;
-  border-color: #b01001;
+.info-text-4 {
+  display: none;
+  
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .headline {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .figure1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .figure2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .figure3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .figure4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
 }
-
-.bus {
-  max-height: 20rem;
-  max-width: 20rem;
-  margin-bottom: -4rem;
-  margin-top: -15rem;
-  position: relative;
-  animation-name: bus;
-  animation-duration: 8s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bus {
-  0% {
-      transform:translateX(-100%);
-  }
-  100% {
-      transform:translateX(500%);
-  }
-}
-
