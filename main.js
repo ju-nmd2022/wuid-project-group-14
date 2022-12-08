@@ -1,21 +1,37 @@
-let counterDisplayElem = document.querySelector('.counter-display');
-let counterMinusElem = document.querySelector('.counter-minus');
-let counterPlusElem = document.querySelector('.counter-plus');
+// COUNTER 
+let counterDisplay = document.querySelector(".counter-display");
+let counterMinus = document.querySelector(".counter-minus");
+let counterPlus = document.querySelector(".counter-plus");
 
 let count = 0;
 
 updateDisplay();
 
-counterPlusElem.addEventListener("click",()=>{
+counterPlus.addEventListener("click",()=>{
     count++;
     updateDisplay();
 }) ;
 
-counterMinusElem.addEventListener("click",()=>{
+counterMinus.addEventListener("click",()=>{
     count--;
     updateDisplay();
 });
 
 function updateDisplay(){
-    counterDisplayElem.innerHTML = count;
+    counterDisplay.innerHTML = count;
 };
+
+
+// PURCHASE BUTTON
+
+const payment = document.getElementById("buy-text");
+payment.innerHTML = "Buy Your Tickets Here!"
+
+payment.addEventListener ('click' , ()=>{
+    payment.innerHTML = "Confirming...";
+
+    setTimeout(()=>{
+        payment.innerHTML = "Payed!"
+        alert(count + " ticket(s) purchase complete! Check e-mail for tickets.");
+    },3000);
+})
