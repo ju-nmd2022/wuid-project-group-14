@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="detail page 1.css" />
+    <script src="main.js" defer></script>
     <title>London Eye</title>
   </head>
   <body>
@@ -23,15 +24,17 @@
       <p class="text">The London Eye (sometimes also known as the Millennium Wheel) is the tallest Ferris wheel in Europe and one of the most popular tourist attractions in London. It opened in 2000 and was at the time the tallest Ferris wheel in the world. It is 135m tall and the wheel has a diameter of 120m. London Eye is located next to the river Themes in the South Bank area of London. It is said that you can see all of London when you're at the very top!</p>
       <p class="text">The wheel has 32 pods which can hold about 10-15 people each. All sides of the pod are glass for the best view. Each rotation takes about 30 minutes. It is an iconic symbol of London and is a must if you've never been before.</p>
       <div class="payment">
-        <button class="buy">
-          <div class="buy-text2">
-            <p>Amount of people:</p>
-            <p id="counter">0</p>
-          </div>
+        <div class="buy-text2">
+          <p>Amount of people:</p>
+          <p class="counter-display">0</p>
+          <button class="counter-minus">-</button>
+          <button class="counter-plus">+</button>
+        </div>
+        <div class="buy">
           <a class="buy-text" href="https://www.london-tickets.co.uk/london-eye-tickets/?gclid=Cj0KCQiAm5ycBhCXARIsAPldzoWhLRiN7Krca1wYGbFOTkRHVvHUvY2U6c3MSWduVW60NfJqJlbb9m8aAliPEALw_wcB"> 
             Buy Your Tickets Here!
           </a>
-        </button>
+        </div>
       </div>
     </main>
     <footer>

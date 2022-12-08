@@ -44,15 +44,17 @@ h2 {
   line-height: 2rem;
 }
 
-.buy {
+.payment {
   grid-column-start: 3;
   grid-column-end: 4;
   max-width: 350px;
+  height: fit-content;
   border: 5px solid;
   border-radius: 10px;
   border-color: #b01001;
   background-color: #b01001;
   padding: 20px;
+  justify-self: center;
 }
 
 
@@ -85,4 +87,5 @@ h2 {
   color: #ffffff;
   padding-bottom: 20px;
   font-size: 14pt;
+  align-self: center;
 }
