@@ -1,3 +1,54 @@
+body {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #b01001;
+  padding: 20px;
+  height: 80px;
+  align-items: center;
+}
+
+.logotype {
+  width: fit-content;
+  height: 45px;
+  padding-top: 10px;
+}
+
+.menu-field {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.menu-alternative {
+  margin: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.menu-alternative:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+.search-field {
+
+margin-bottom: 10px;
+
+}
+
+input {
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 10rem;
+}
+::placeholder {
+  font-size: 12pt;
+  color: #b01001;
+}
 .london {
   width: 100%;
 }
@@ -106,6 +157,12 @@
  padding: 40px;
 }
 
+.figure{
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
 .figure-1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -125,6 +182,7 @@ a {
   border: 5px solid;
   border-radius: 15px;
   border-color: #b01001;
+  width: 200px;
 }
 
 .figure-3 {
@@ -133,6 +191,7 @@ a {
   border: 5px solid;
   border-radius: 15px;
   border-color: #b01001;
+  width: 200px;
 }
 
 .figure-4 {
@@ -141,11 +200,55 @@ a {
   border: 5px solid;
   border-radius: 15px;
   border-color: #b01001;
+  width: 200px;
 }
 
 .figure:hover {
   text-decoration: underline;
   border-color: #29296e;
+}
+.image {
+  display: inline-block;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+}
+.image-text {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 10px;
+}
+
+.info-text-1{
+margin-left: 70px;
+}
+
+.info-text-2{
+margin-left: 70px;
+}
+
+.info-text-3{
+margin-left: 70px; 
+}
+
+.info-text-4{
+margin-left: 70px;  
+}
+
+.info-text:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #b01001;
+  padding: 40px;
+  height: 170px;
 }
 
 /* key frames */
@@ -169,7 +272,7 @@ a {
 
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   .container {
     display: grid;
@@ -189,16 +292,28 @@ a {
 
 .menu-field {
   display: inline block;
+  margin-top: 15px;
+ 
 }
 
 .menu-alternative {
   font-size: 12px;
+  margin-left: -6px;
 
 }
 
+#field-4{
+  display: none;
+}
+
   .search-field {
-  height: 20px;
-  width: 120px;
+  height: 10px;
+  width: 80px;
+}
+
+::placeholder {
+  font-size: 10pt;
+  color: #b01001;
 }
 
 .london-slogan {
@@ -220,7 +335,7 @@ a {
  
    .phonebooth {
     width: 400px;
-    margin-left: -30px;
+    margin-left: -65px;
     margin-top: -25px;
    }
 
@@ -228,7 +343,7 @@ a {
     grid-column-start: 1;
     grid-column-end: 3;
     font: 12px;
-    margin-left: -45px;
+    margin-left: -85px;
     text-align: justify;
    }
 
@@ -239,7 +354,7 @@ a {
 
    .train {
     width: 400px;
-    margin-left: -30px;
+    margin-left: -60px;
     margin-top: -5px;
    }
 
@@ -247,7 +362,7 @@ a {
     grid-column-start: 1;
     grid-column-end: 3;
     font: 12px;
-    margin-left: -45px;
+    margin-left: -85px;
     text-align: justify;
   }
 
@@ -257,45 +372,40 @@ a {
     font-size: 30px;
   }
   
-
   .container h1 {
     
     margin-top: -30px;
-    margin-left: -120px;
+    margin-left: -250px;
   }
 
   .figure-1 {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 400px;
-    margin-left: -25px;
+    margin-left: -65px;
   }
   .figure-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 400px;
-    margin-left: -25px;
+    margin-left: -65px;
     margin-top: 50px;
   }
   .figure-3 {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 400px;
-    margin-left: -25px;
+    margin-left: -65px;
     margin-top: 50px;
   }
   .figure-4 {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 400px;
-    margin-left: -25px;
+    margin-left: -65px;
     margin-top: 50px;
   }
-  .figure:hover {
-    text-decoration: underline;
-    border-color: #29296e;
-  }
-
+ 
   a {
     text-decoration: none;
   }
@@ -314,17 +424,21 @@ a {
   padding: 10px;
 }
 
-.info {
+.info-text-1 {
 
-  grid-column-start:1 ;
-  grid-column-end: 2;
-  height: 200px;
-  width: 200px;
+ margin-top: -5px;
+ margin-left: -10px;
+
 }
 
-info-3 {
-  display: none;
+.info-text-2 {
+
+  margin-top: -5px;
+  margin-left: 70px;
+ 
+
 }
+
 
 .info-text-3 {
   display: none;
