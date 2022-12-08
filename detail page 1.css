@@ -37,7 +37,6 @@ h2 {
 .text {
   grid-column-start: 1;
   grid-column-end: 3;
-  padding-left: 50px;
   font-family: Arial, sans-serif;
   font-size: 16pt;
   justify-self: start;
@@ -53,12 +52,17 @@ h2 {
   border-radius: 10px;
   border-color: #b01001;
   background-color: #b01001;
+  padding: 20px;
 }
+
 
 .buy-text {
   font-size: 20pt;
-  color: #ffffff;
+  color: #b01001;
   text-decoration: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .buy-text:hover {
@@ -75,4 +79,10 @@ h2 {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 2px;
   border-radius: 5px;
+}
+
+.buy-text2 {
+  color: #ffffff;
+  padding-bottom: 20px;
+  font-size: 14pt;
 }
