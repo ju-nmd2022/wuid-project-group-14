@@ -302,7 +302,7 @@ footer {
 
 }
 
-#field-4{
+#field-4 {
   display: none;
 }
 
@@ -435,10 +435,8 @@ footer {
 
   margin-top: -5px;
   margin-left: 70px;
- 
 
 }
-
 
 .info-text-3 {
   display: none;

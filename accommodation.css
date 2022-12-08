@@ -34,6 +34,27 @@
   text-decoration: none;
 }
 
+.bottom {
+  display: grid;
+  margin-left: -70px;
+  margin-top: 40px;
+
+
+}
+
+.bottom-1 {
+  display: flex;
+}
+
+.bottom-2 {
+  display: flex;
+}
+
+.figure{
+  margin-bottom: 50px;
+  width: 200px;
+}
+
 .figure:hover {
   text-decoration: underline;
   border-color: #29296e;
@@ -454,6 +475,17 @@ width: 10px;
 .figure:hover {
   text-decoration: underline;
   border-color: #29296e;
+}
+
+
+.bottom-1{
+display: grid;
+margin-left: -50px;
+}
+
+.bottom-2{
+  display: grid;
+  margin-left: -50px;
 }
 
 .figure1 {
