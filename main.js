@@ -18,8 +18,12 @@ counterMinus.addEventListener("click",()=>{
 });
 
 function updateDisplay(){
+    if (count < 0) {
+        counterDisplay.innerHTML = "0";
+    } else {
     counterDisplay.innerHTML = count;
-};
+}
+}
 
 
 // PURCHASE BUTTON
