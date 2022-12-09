@@ -92,6 +92,19 @@ h2 {
   justify-self: center;
 }
 
-#id {
+.buy {
   cursor: pointer;
+}
+
+.counter-display {
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 300px;
+  border-radius: 5px;
+}
+
+.order {
+  font-size: 20pt;
+  font-weight: bold;
 }

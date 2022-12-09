@@ -29,7 +29,7 @@ function updateDisplay(){
 // PURCHASE BUTTON
 
 const payment = document.getElementById("buy-text");
-payment.innerHTML = "Buy Your Tickets Here!"
+payment.innerHTML = "Purchase"
 
 payment.addEventListener ('click' , ()=>{
     payment.innerHTML = "Confirming...";
@@ -37,6 +37,7 @@ payment.addEventListener ('click' , ()=>{
         let person = prompt("Please enter your e-adress for order confirmation:", "name@example.com");
         if (person == null || person == "") {
         alert ("Invalid email.");
+        payment.innerHTML = "Failed, try again."
         } else {
         alert ("Order confirmation sent to: \n" + person + "\n" + count + " ticket(s) purchased!");
         payment.innerHTML = "Purchased!"
