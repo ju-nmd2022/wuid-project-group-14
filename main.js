@@ -33,9 +33,13 @@ payment.innerHTML = "Buy Your Tickets Here!"
 
 payment.addEventListener ('click' , ()=>{
     payment.innerHTML = "Confirming...";
-
     setTimeout(()=>{
-        payment.innerHTML = "Payed!"
-        alert(count + " ticket(s) purchase complete! Check e-mail for tickets.");
-    },3000);
+        let person = prompt("Please enter your e-adress for order confirmation:", "name@example.com");
+        if (person == null || person == "") {
+        alert ("Invalid email.");
+        } else {
+        alert ("Order confirmation sent to: \n" + person + "\n" + count + " ticket(s) purchased!");
+        payment.innerHTML = "Purchased!"
+        }
+    },2000);
 })
