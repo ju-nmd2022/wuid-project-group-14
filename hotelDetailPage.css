@@ -2,6 +2,14 @@ body {
   font-family: arial, sans-serif;
 }
 
+.backButton {
+  background: #b01001;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  padding: 0.5rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
