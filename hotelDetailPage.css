@@ -1,0 +1,54 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.images {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.hotel {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.hotelDescription {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.payment {
+  margin-left: 5rem;
+  background-color: #b01001;
+  border-radius: 1rem;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding: 3rem;
+}
+
+.visit {
+  margin-top: 2rem;
+}
+
+.people {
+  margin-top: 2rem;
+}
+
+#bookButton {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
