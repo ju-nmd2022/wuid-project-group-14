@@ -8,9 +8,6 @@ let kidsCounter = document.getElementById("kidsCounter");
 let kidsCounterMinus = document.getElementById("kidsCounterMinus");
 let kidsCounterPlus = document.getElementById("kidsCounterPlus");
 
-// booking
-let bookButton = document.getElementById("bookButton");
-
 // The counter for how many adults.
 let adultCount = 0;
 
@@ -23,8 +20,10 @@ function countUp() {
 }
 
 function countDown() {
-  adultCount--;
-  adultCounter.innerHTML = adultCount;
+  if (adultCount > 0) {
+    adultCount--;
+    adultCounter.innerHTML = adultCount;
+  }
 }
 
 // The counter for how many kids.
@@ -39,6 +38,19 @@ function countUpKids() {
 }
 
 function countDownKids() {
-  kidCount--;
-  kidsCounter.innerHTML = kidCount;
+  if (kidCount > 0) {
+    kidCount--;
+    kidsCounter.innerHTML = kidCount;
+  }
+}
+
+// booking
+let bookButton = document.getElementById("bookButton");
+
+bookButton.addEventListener("click", booking);
+
+function booking() {
+  if (kidCount >= 1 || adultCount >= 1 && ) {
+    
+  }
 }
