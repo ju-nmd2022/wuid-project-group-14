@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <title>NAVAL - About Us</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img class="logotype" src="Naval.svg" alt="logotype" />
+
+        <div class="menu-field">
+          <a class="menu-alternative" href="index.html">Home</a>
+          <a class="menu-alternative" href="activities.html">Activities</a>
+          <a class="menu-alternative" href="accommodations.html"
+            >Accommodations</a
+          >
+          <a id="feild-3" class="menu-alternative" href="transportation.html"
+            >Transportation</a
+          >
+          <input
+            class="search-field"
+            type="text"
+            placeholder="Search"
+            name="search"
+          />
+
+          <img
+            src="Images/night-theme.png"
+            id="theme"
+            class="menu-alternative"
+          />
+        </div>
+      </header>
+      <main>
+        <section class="swipe">
+          <h1 class="heading">About Us</h1>
+          <h3 class="heading-2">Our Website Story</h3>
+          <p class="para-2">
+            The main idea for this website came when we visited london in 2008
+            and there were little to no tour guide website or booking site with
+            features so we decided to make a website to ease the tourists.As a
+            top travel media brand in the world, Naval's mission is to inform
+            and inspire passionate travelers, like you. We celebrate travel and
+            provide service and inspiration at every point of your journey, from
+            trip ideas to nitty-gritty logistics. We cover small towns and big
+            cities, hidden gems and tried-and-true destinations, beaches and
+            lakes, mountains and valleys, national parks and outdoor adventures,
+            road trips and cruises, fine-dining experiences, and everything in
+            between.And because, above all, our goal is to help our readers make
+            the most of their invaluable free time. Our travel experiences
+            influence much of what we practice in between trips, and whether
+            we're transforming our bedrooms using luxury hotel tricks or
+            applying beauty regimens we admired abroad, we love to share our
+            learnings. So, whatever brings you to our site, you'll leave
+            dreaming about places you never even considered, equipped with all
+            the stellar tips, advice, and products you need to get you there.
+          </p>
+        </section>
+        <section class="swipe">
+          <h3 class="heading-3">What can I find on NAVAL.com?</h3>
+          <p class="para-3">
+            NAVAL.com has a wealth of content to help you plan your visit to
+            London, including: The best things to do, including must-see shows,
+            iconic attractions and top tours – book in advance to secure the
+            best tickets so you don’t miss out. Monthly guides, covering
+            must-see events and activities throughout the year. Essential
+            information, from maps and money-saving tips to public holidays and
+            British currency. Top London accommodation ideas, including hotels,
+            cosy B&Bs, all sorts of budget-friendly options and more. The
+            tastiest places to eat, whether afternoon tea venues, special dinner
+            cruises or fun family-friendly restaurants. Clear information on
+            getting to and around London. Action-packed itineraries and
+            comprehensive area guides to discover new parts of London. Plus day
+            trips from London covering iconic sights and cities.
+          </p>
+        </section>
+        <section class="swipe">
+          <h3 class="heading-4">How to add your own event in our Website?</h3>
+          <p class="para-4">
+            Our content team features a very limited number of high-profile
+            events on NAVAL.com. If you would like to tell the team about your
+            event, please send press releases and information to
+            naval@gmail.com. For guaranteed coverage, there are a small number
+            of premium partnership opportunities available. Find out more about
+            paid-for display advertising, advertorials and other sponsored
+            content, or get in touch via naval@gmail.com. Please note: we are
+            unable to answer general enquiries sent to these email addresses.
+          </p>
+        </section>
+      </main>
+
+      <!-- footer starts -->
+      <footer>
+        <div class="info info-1">
+          <p class="info-text info-text-1">Naval</p>
+          <p class="info-text info-text-1">Gjuterigatan 5</p>
+          <p class="info-text info-text-1">553 18 Jönköping</p>
+          <p class="info-text info-text-1">Sweden</p>
+          <p class="info-text info-text-1">naval@gmail.com</p>
+          <p class="info-text info-text-1">Tel: +44 123 456 78</p>
+        </div>
+
+        <div class="info-2">
+          <p class="info-text info-text-2">Sitemap</p>
+          <p class="info-text info-text-2">Activities</p>
+          <p class="info-text info-text-2">Accommodation</p>
+          <p class="info-text info-text-2">Transportation</p>
+          <p class="info-text info-text-2">Food and drinks</p>
+        </div>
+
+        <div class="info-3">
+          <p class="info-text info-text-3">FAQ</p>
+          <p class="info-text info-text-3">Terms & Conditions</p>
+          <p class="info-text info-text-3">Privacy & Cookies</p>
+          <p class="info-text info-text-3">Partners</p>
+          <p class="info-text info-text-3">Work</p>
+        </div>
+
+        <div class="info-4">
+          <p class="info-text info-text-4">Follow us!</p>
+          <p class="info-text info-text-4">Instagram</p>
+          <p class="info-text info-text-4">Facebook</p>
+          <p class="info-text info-text-4">Tik Tok</p>
+          <p class="info-text info-text-4">Youtube</p>
+          <p class="info-text info-text-4">Pinterest</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var theme = document.getElementById("theme");
+
+      theme.onclick = function () {
+        document.body.classList.toggle("night-theme");
+        if (document.body.classList.contains("night-theme")) {
+          theme.src = "Images/day-theme.png";
+        } else {
+          theme.src = "Images/night-theme.png";
+        }
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
+
+      const swipeElements = document.querySelectorAll(".swipe");
+      swipeElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
