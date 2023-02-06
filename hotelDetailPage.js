@@ -49,8 +49,8 @@ let bookButton = document.getElementById("bookButton");
 
 bookButton.addEventListener("click", booking);
 
-function booking() {
+/* function booking() {
   if (kidCount >= 1 || adultCount >= 1 && ) {
     
   }
-}
+} */
