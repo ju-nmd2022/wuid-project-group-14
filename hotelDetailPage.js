@@ -11,46 +11,90 @@ let kidsCounterPlus = document.getElementById("kidsCounterPlus");
 // The counter for how many adults.
 let adultCount = 0;
 
-adultCounterPlus.addEventListener("click", countUp);
-adultCounterMinus.addEventListener("click", countDown);
-
-function countUp() {
+adultCounterPlus.addEventListener("click", function () {
   adultCount++;
   adultCounter.innerHTML = adultCount;
-}
+});
 
-function countDown() {
+adultCounterMinus.addEventListener("click", function () {
   if (adultCount > 0) {
     adultCount--;
     adultCounter.innerHTML = adultCount;
   }
-}
+});
 
 // The counter for how many kids.
 let kidCount = 0;
 
-kidsCounterPlus.addEventListener("click", countUpKids);
-kidsCounterMinus.addEventListener("click", countDownKids);
-
-function countUpKids() {
+kidsCounterPlus.addEventListener("click", function () {
   kidCount++;
   kidsCounter.innerHTML = kidCount;
-}
+});
 
-function countDownKids() {
+kidsCounterMinus.addEventListener("click", function () {
   if (kidCount > 0) {
     kidCount--;
     kidsCounter.innerHTML = kidCount;
   }
-}
+});
 
 // booking
 let bookButton = document.getElementById("bookButton");
+let popup = document.getElementById("popup");
+let dateCheckIn = document.getElementById("dateCheckIn");
+let dateCheckOut = document.getElementById("dateCheckOut");
 
-bookButton.addEventListener("click", booking);
+let dateCheckInInputFilled = false;
+let dateCheckOutInputFilled = false;
 
-/* function booking() {
-  if (kidCount >= 1 || adultCount >= 1 && ) {
-    
+dateCheckIn.addEventListener("input", function () {
+  dateCheckInInputFilled = true;
+});
+
+dateCheckOut.addEventListener("input", function () {
+  dateCheckOutInputFilled = true;
+});
+
+bookButton.addEventListener("click", function () {
+  if (
+    kidCount >= 0 &&
+    adultCount >= 1 &&
+    dateCheckInInputFilled === true &&
+    dateCheckOutInputFilled === true
+  ) {
+    popup.style.visibility = "visible";
+  } else {
+    alert("Information missing");
   }
-} */
+});
+
+// confirmation
+let email = document.getElementById("email");
+let phone = document.getElementById("phone");
+let confirmButton = document.getElementById("confirm");
+
+let emailInputFilled = false;
+
+email.addEventListener("input", function () {
+  emailInputFilled = true;
+});
+
+let phoneInputFilled = false;
+
+phone.addEventListener("input", function () {
+  phoneInputFilled = true;
+});
+
+confirmButton.addEventListener("click", function () {
+  if (emailInputFilled === true && phoneInputFilled === true) {
+    alert("Confirmation sent to email!");
+  } else {
+    alert("Information missing!");
+  }
+});
+
+let closeButton = document.getElementById("closeButton");
+
+closeButton.addEventListener("click", function () {
+  popup.style.visibility = "hidden";
+});
