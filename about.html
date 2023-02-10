@@ -93,6 +93,7 @@
           </p>
         </section>
       </main>
+      <div></div>
 
       <!-- footer starts -->
       <footer>
@@ -131,6 +132,9 @@
         </div>
       </footer>
     </div>
+    <!-- <div id="liquid-foooter">
+      <div class="liquid"></div>
+    </div> -->
 
     <script>
       var theme = document.getElementById("theme");
@@ -157,6 +161,18 @@
 
       const swipeElements = document.querySelectorAll(".swipe");
       swipeElements.forEach((el) => observer.observe(el));
+
+      // const foooter = document.getElementById("liquid-foooter");
+
+      // const animateLiquid = (x) => {
+      //   const liquid = document.createElement("div");
+      //   liquid.className = "liquid";
+      //   liquid.style.left = "${x}px";
+
+      //   foooter.appendChild(liquid);
+      //   setTimeout(() => foooter.removeChild(liquid), 2000);
+      // };
+      // window.onmousemove = (e) => animateLiquid(e.clientX);
     </script>
   </body>
 </html>
