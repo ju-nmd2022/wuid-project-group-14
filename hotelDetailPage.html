@@ -47,9 +47,9 @@
         <div>
           <h3 class="visit">Time of visit</h3>
           <p>Check-in</p>
-          <input type="date" />
+          <input id="dateCheckIn" type="date" />
           <p>Check-out</p>
-          <input type="date" />
+          <input id="dateCheckOut" type="date" />
         </div>
         <div>
           <h3 class="people">Amount of people</h3>
@@ -64,6 +64,13 @@
         </div>
         <div>
           <button id="bookButton">Book now</button>
+        </div>
+        <div id="popup">
+          <button id="closeButton">close</button>
+          <h2>Confirm booking</h2>
+          <input id="email" type="email" placeholder="Email" />
+          <input id="phone" type="tel" placeholder="Phone number" />
+          <button id="confirm">Confirm my booking!</button>
         </div>
       </section>
     </main>
