@@ -148,6 +148,8 @@
         }
       };
 
+      // recieved help from a friend to understand how to do transition with java.
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           console.log(entry);
@@ -161,18 +163,6 @@
 
       const swipeElements = document.querySelectorAll(".swipe");
       swipeElements.forEach((el) => observer.observe(el));
-
-      // const foooter = document.getElementById("liquid-foooter");
-
-      // const animateLiquid = (x) => {
-      //   const liquid = document.createElement("div");
-      //   liquid.className = "liquid";
-      //   liquid.style.left = "${x}px";
-
-      //   foooter.appendChild(liquid);
-      //   setTimeout(() => foooter.removeChild(liquid), 2000);
-      // };
-      // window.onmousemove = (e) => animateLiquid(e.clientX);
     </script>
   </body>
 </html>
