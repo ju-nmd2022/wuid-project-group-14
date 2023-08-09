@@ -1,0 +1,178 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+.backButton {
+  background: #b01001;
+  color: #ffffff;
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.images {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 8rem;
+}
+
+.car {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.description {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: arial, sans-serif;
+}
+
+.facility {
+  margin-bottom: 2.5rem;
+}
+
+.rental {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
+}
+
+.rental h2 {
+  margin-top: -70px;
+}
+
+.pad {
+  display: grid;
+  margin-left: 20%;
+  margin-top: 70px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.input {
+  border: none;
+  width: 100%;
+}
+
+.submitButton {
+  margin-top: 50px;
+  margin-left: 55%;
+  background-color: #b01001;
+  font-size: 20px;
+  padding-top: 32px 0;
+  color: #ffffff;
+}
+
+.info-pad {
+  display: flex;
+  margin-top: -40px;
+}
+
+.info-text-1 {
+  margin-left: 70px;
+}
+
+.info-text-2 {
+  margin-left: 400px;
+}
+.info-3 {
+  margin-top: 15px;
+}
+
+.info-text-3 {
+  margin-left: 500px;
+  text-decoration: none;
+}
+
+.info-text:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #b01001;
+  padding: 40px;
+  height: 170px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .images {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .payment {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .payment {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: auto;
+    margin-left: 0rem;
+  }
+
+  .info-text-1 {
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .info-text-2 {
+    margin-top: -5px;
+    margin-left: 70px;
+  }
+
+  .info-text-3 {
+    display: none;
+  }
+}
